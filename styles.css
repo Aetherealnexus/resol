@@ -1,0 +1,70 @@
+/* === Reset & Base === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9fb;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    padding: 2rem 1rem;
+  }
+  
+  /* === Section Layout === */
+  .section {
+    max-width: 960px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  
+  /* === Animated Reveal Class === */
+  .section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* === Section Headings === */
+  .section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: #1a1a1a;
+  }
+  
+  .section h2 i {
+    font-size: 1.2rem;
+    color: #4a90e2;
+  }
+  
+  /* === Lists === */
+  .section ul {
+    padding-left: 1.5rem;
+  }
+  
+  .section ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* === Footer / Header (Optional) === */
+  .site-footer {
+    text-align: center;
+    margin-top: 4rem;
+    color: #888;
+    font-size: 0.9rem;
+  }
+  

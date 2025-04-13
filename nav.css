@@ -1,0 +1,82 @@
+/* === Modern Expandable Navbar === */
+nav {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 1rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto 2rem auto;
+    position: relative;
+  }
+  
+  .nav-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .nav-sections {
+    display: none;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .nav-sections.active {
+    display: flex;
+  }
+  
+  .nav-section {
+    border-top: 1px solid #eee;
+    padding-top: 0.5rem;
+  }
+  
+  .nav-section h3 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .nav-section ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .nav-section ul li {
+    margin-bottom: 0.4rem;
+  }
+  
+  .nav-section ul li a {
+    text-decoration: none;
+    color: #4a90e2;
+    transition: color 0.2s;
+  }
+  
+  .nav-section ul li a:hover {
+    color: #2f6fd4;
+  }
+  
+  @media (min-width: 768px) {
+    .nav-toggle {
+      display: none;
+    }
+  
+    .nav-sections {
+      display: flex !important;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+  
+    .nav-section {
+      flex: 1 1 30%;
+      border: none;
+      padding-top: 0;
+    }
+  }
+  
